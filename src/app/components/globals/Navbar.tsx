@@ -9,11 +9,8 @@ export default function Navbar({ setActivePage }: { setActivePage: (isActive: st
             <li onClick={() => setActivePage('home')} className="h-full border border-white flex items-center justify-center py-2 px-3 border-collapse cursor-pointer hover:bg-accent">
                 <h2>home</h2>
             </li>
-            <li onClick={() => setActivePage('projects')} className="h-full border border-white flex items-center justify-center py-2 px-3 border-collapse cursor-pointer hover:bg-accent">
-                <h2>projects</h2>
-            </li>
-            <li onClick={() => setActivePage('contact_me')} className="h-full border border-white flex items-center justify-center py-2 px-3 border-collapse cursor-pointer hover:bg-accent">
-                <h2>contact_me</h2>
+            <li onClick={() => setActivePage('to-do-app')} className="h-full border border-white flex items-center justify-center py-2 px-3 border-collapse cursor-pointer hover:bg-accent">
+                <h2>to-do-app</h2>
             </li>
         </ul>
     )
