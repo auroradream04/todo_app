@@ -1,13 +1,20 @@
-'use client'
+// Components
+import Form from "./components/Form";
+import Tasks from "./components/Tasks";
 
-import { useState } from "react";
+// Utilities
+import { fetchAllTasks } from "./utils/fetchAllTasks";
 
-export default function Home() {
-  const [activePage, setActivePage] = useState('home');
+// Types
+import { Task } from "./utils/types";
 
+export default async function Home() {
+  const tasks: Task[] = await fetchAllTasks()
   return (
-    <div className="px-40 py-28">
-      return(null)
+    <div className="p-8">
+      <h1>Aurora's To-do App</h1>
+      <Form />
+      <Tasks tasks={tasks}/>
     </div>
   );
 }
