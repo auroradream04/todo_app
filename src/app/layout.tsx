@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${GeistMono.className} bg-black text-white`}>
+      <body className={`${GeistMono.className} dark:bg-black dark:text-white`}>
         <Header />
         {children}
       </body>
