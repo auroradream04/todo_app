@@ -26,7 +26,7 @@ export default function Form() {
     return (
         <form className="w-full flex border border-[rgb(20,20,20)]" onSubmit={handleSubmit}>
             <input type="text" value={textInput} onChange={handleChange} className="w-full border border-[rgb(20,20,20)] p-2 m-2 h-10 rounded-full" />
-            <button type="submit" disabled={isLoading} className="cursor-pointer">Add</button>
+            <button type="submit" disabled={isLoading} className="cursor-pointer mr-2">add</button>
         </form>
     )
 } 
