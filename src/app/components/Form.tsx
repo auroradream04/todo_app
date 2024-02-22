@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { useRouter } from "next/navigation"
 import { createTask } from "../utils/createTask"
+import { FaPlus } from "react-icons/fa"
 
 export default function Form() {
     const [isLoading, setIsLoading] = useState(false)
@@ -24,9 +25,9 @@ export default function Form() {
     }
 
     return (
-        <form className="w-full flex border border-[rgb(20,20,20)]" onSubmit={handleSubmit}>
-            <input type="text" value={textInput} onChange={handleChange} className="w-full border border-[rgb(20,20,20)] p-2 m-2 h-10 rounded-full" />
-            <button type="submit" disabled={isLoading} className="cursor-pointer mr-2">add</button>
+        <form className="w-full flex justify-between items-center mt-4" onSubmit={handleSubmit}>
+            <input type="text" placeholder="add a task..." value={textInput} onChange={handleChange} className="w-full bg-[rgb(40,40,40)] p-2 mr-4 h-8 rounded-md outline-none text-sm" />
+            <button type="submit" disabled={isLoading} className="cursor-pointer"><FaPlus/></button>
         </form>
     )
 } 

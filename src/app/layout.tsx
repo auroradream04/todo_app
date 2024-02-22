@@ -1,7 +1,7 @@
 // Components
 import Header from "./components/globals/Header";
 import type { Metadata } from "next";
-import { GeistMono } from "geist/font/mono";
+import { GeistSans } from "geist/font/sans";
 
 // Utility
 import "./globals.css";
@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${GeistMono.className} dark:bg-black dark:text-white`}>
+      <body className={`${GeistSans.className} bg-black text-white`}>
         <Header />
         {children}
       </body>
